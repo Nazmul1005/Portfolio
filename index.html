@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-theme="paper">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111311">
+  <meta name="description" content="Nazmul Islam — Full Stack Developer & ML Engineer in Sylhet, Bangladesh. Explore web applications, machine learning projects, skills, and services.">
+  <title>Nazmul Islam — Full Stack Developer & ML Engineer</title>
+  <script>
+    document.documentElement.classList.add('booting');
+    // Reveal the page even if a script fails to load.
+    window.portfolioIntroFallback = setTimeout(() => {
+      document.documentElement.classList.remove('booting');
+      document.getElementById('boot-screen')?.remove();
+      document.querySelectorAll('[data-intro-inert]').forEach(element => {
+        element.inert = false;
+        element.removeAttribute('data-intro-inert');
+      });
+    }, 9000);
+  </script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="macos.css">
+</head>
+<body>
+  <div id="macintosh-wallpaper" class="macintosh-wallpaper" aria-hidden="true">
+    <div class="spectrum-color"></div>
+    <div class="retro-perspective">
+      <img class="retro-scene" src="assets/macintosh/icon-garden.png" alt="" width="512" height="342">
+      <img class="retro-scene" src="assets/macintosh/finder-window.png" alt="" width="512" height="342">
+      <img class="retro-scene" src="assets/macintosh/macpaint.png" alt="" width="512" height="342">
+      <img class="retro-scene" src="assets/macintosh/control-panel.png" alt="" width="512" height="342">
+    </div>
+    <div class="spectrum-shading"></div>
+  </div>
+  <section id="boot-screen" class="boot-screen" aria-label="Coding introduction">
+    <canvas id="matrix-rain" aria-hidden="true"></canvas>
+    <div class="boot-topline"><span class="boot-brand">⌘ / Nazmul’s Mac</span><button id="boot-skip" type="button">Skip intro <span>↗</span></button></div>
+    <div class="boot-center">
+      <p class="boot-eyebrow">MATRIX CODE RAIN / LIVE</p>
+      <h2>hello<span>.</span> world<span>.</span></h2>
+      <div class="boot-editor">
+        <div class="boot-editor-bar"><span><i></i><i></i><i></i></span><span>workspace.js</span><span>JS</span></div>
+        <div class="boot-editor-content" aria-hidden="true"><pre id="boot-code" class="boot-code"></pre></div>
+      </div>
+      <div class="boot-progress-heading"><span id="boot-status" role="status">Writing a little introduction…</span><span id="boot-percent" aria-hidden="true">00%</span></div>
+      <div class="boot-progress" aria-hidden="true"><span id="boot-progress-fill"></span></div>
+    </div>
+    <div class="boot-bottomline"><span>IDEAS → CODE → SOMETHING YOU CAN EXPLORE</span><span id="boot-name">Nazmul Islam</span></div>
+  </section>
+  <header class="menubar">
+    <a class="brand" href="#" aria-label="Open Finder"><span class="apple-symbol" aria-hidden="true"></span><span id="brand-name">Finder</span></a>
+    <nav class="mac-menus" aria-label="Desktop menu">
+      <details class="mac-menu"><summary>File</summary><div class="menu-dropdown"><button data-open="welcome">About Nazmul</button><button data-open="projects">Open Projects</button><button data-open="contact">Get in Touch</button></div></details>
+      <details class="mac-menu"><summary>View</summary><div class="menu-dropdown preferences"><label>Appearance <select id="theme" aria-label="Color theme"><option value="paper">Light</option><option value="ink">Dark</option><option value="sepia">Warm</option><option value="green">Terminal</option></select></label><label>Typography <select id="typography" aria-label="Typography"><option value="sans">System</option><option value="mono">Mono</option><option value="serif">Serif</option></select></label><div class="wallpaper-preference"><span>Macintosh · Spectrum</span><button id="wallpaper-motion" type="button" aria-label="Pause live wallpaper" aria-pressed="false" aria-controls="macintosh-wallpaper">Pause</button></div></div></details>
+      <details class="mac-menu"><summary>Window</summary><div class="menu-dropdown"><button data-open="welcome">Show Welcome</button><button data-open="terminal">Open Terminal</button><button id="reset-desktop">Reset Desktop</button></div></details>
+    </nav>
+    <div class="menu-right"><span class="mac-status" data-icon="wifi" aria-hidden="true"></span><button id="search-toggle" class="search-button" aria-label="Open Spotlight search"><span data-icon="search"></span><span>Spotlight</span><kbd>⌘ K</kbd></button><time id="clock">00:00</time></div>
+  </header>
+
+  <main id="desktop" aria-label="Portfolio desktop">
+    <div class="desktop-heading"><span class="tiny-label">NAZMUL’S MAC</span><span class="desktop-hint">A little space for everything I build.</span></div>
+    <nav id="desktop-icons" aria-label="Portfolio files"></nav>
+    <div class="wallpaper" aria-hidden="true"><span class="wallpaper-outline">hello.</span><span class="wallpaper-caption">BUILT WITH CURIOSITY. ALWAYS IN PROGRESS.</span></div>
+    <section class="window welcome-window window-active" id="welcome-window" data-window="welcome" aria-label="Welcome" tabindex="-1">
+      <header class="window-bar"><div class="window-actions"><button data-action="close" aria-label="Close welcome"><span>×</span></button><button data-action="minimize" aria-label="Minimize welcome"><span>−</span></button><button data-action="maximize" aria-label="Maximize welcome"><span>⤢</span></button></div><span class="window-title"><span data-icon="user"></span> About Nazmul</span><span class="window-bar-detail">Personal</span></header>
+      <div class="finder-layout"><aside class="finder-sidebar" id="welcome-sidebar" aria-label="Finder sidebar"></aside>
+      <div class="welcome-content">
+        <div class="welcome-topline"><span class="pill"><span class="status-dot"></span><span id="availability"></span></span><span class="tiny-label">01 / INTRODUCTION</span></div>
+        <div class="intro"><div class="avatar" id="avatar">NI<span class="avatar-dot"></span></div><div><p class="eyebrow">HELLO, WORLD. I’M</p><h1 id="profile-name">Nazmul Islam<span class="accent">.</span></h1><p id="profile-role">Full Stack Developer & ML Engineer</p></div></div>
+        <p id="profile-bio" class="bio"></p>
+        <div class="intro-links" id="intro-links"></div>
+        <div class="welcome-line"></div>
+        <div class="quick-heading"><span class="tiny-label">TAKE A LOOK AROUND</span><span class="tiny-label faint">CLICK TO OPEN ↗</span></div>
+        <div class="quick-links"><button data-open="projects"><span class="quick-icon" data-icon="folder"></span><span><strong>All projects</strong><small id="projects-count">Explore my repositories</small></span><span class="quick-arrow">↗</span></button><button data-open="about"><span class="quick-icon" data-icon="user"></span><span><strong>A little about me</strong><small>The person behind the code</small></span><span class="quick-arrow">↗</span></button></div>
+        <div class="welcome-footer"><span><span class="status-dot"></span> ALL SYSTEMS CURIOUS</span><span>Make yourself at home <span class="accent">↵</span></span></div>
+      </div>
+      </div>
+    </section>
+    <div class="desktop-bottom"><span>Made with curiosity, in Sylhet.</span><span>⌘ K for Spotlight</span></div>
+  </main>
+
+  <footer class="taskbar" aria-label="Dock"><div class="dock"><button class="dock-item" id="home-button" data-dock="welcome" aria-label="Open Finder"><span class="app-icon app-finder" data-icon="finder"></span><span class="dock-tooltip">Finder</span><span class="dock-dot"></span></button><div id="dock-apps"></div><span class="dock-divider"></span><button class="dock-item" id="theme-shortcut" aria-label="Toggle light and dark appearance"><span class="app-icon app-settings" data-icon="settings"></span><span class="dock-tooltip">Appearance</span></button></div></footer>
+  <dialog id="search-dialog" aria-label="Spotlight search"><div class="search-input-row"><span data-icon="search"></span><input id="search-input" placeholder="Spotlight Search" aria-label="Search portfolio" autocomplete="off"><button id="search-close" aria-label="Close search"><kbd>esc</kbd></button></div><div id="search-results"></div><div class="search-footer">Search your portfolio · Press Return to open</div></dialog>
+  <div id="toast" role="status"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

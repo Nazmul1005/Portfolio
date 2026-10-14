@@ -1,0 +1,11 @@
+{
+  "name": "personal-desktop-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check app.js && node --check wallpaper.js && node --check intro.js && node --check matrix-rain.js && node --check projects.js && node --check profile.js && node --check server.js"
+  }
+}
